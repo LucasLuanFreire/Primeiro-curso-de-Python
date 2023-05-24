@@ -5,10 +5,24 @@
   </head>
   <body> 
     <py-script> 
-      dia = 15
-      mes = 10
-      ano = 2015
-      print(dia, mes, ano, sep="/")
+      print("*************************************")
+      print("Bem vindo ao jogo de adivinhação !")
+      print("*************************************")
+
+      numero_secreto = 32
+      chute_str = input("Digite seu numero")
+      chute = int(chute_str)
+      resposta = ""
+
+      if(numero_secreto == chute):
+      resposta = "Você acertou"
+      else:
+      resposta = "Você errou"
+
+      print("Você digitou",chute_str, resposta);
+      
+
+
       
     </py-script> 
   </body>
