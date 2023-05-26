@@ -15,14 +15,13 @@
 
       acertou = chute == numero_secreto
       maior =   chute >  numero_secreto
-      menor =   chute <  numero_secreto
 
       if(acertou):
         resposta = "Você acertou"
       else:
         if(maior):
           resposta = "Você errou!, o seu chute foi maior do que o número secreto"
-        elif(menor):
+        elif(!maior):
           resposta = "Você errou!, o seu chute foi maior do que o número secreto"
 
         
