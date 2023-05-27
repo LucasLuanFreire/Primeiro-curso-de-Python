@@ -9,16 +9,19 @@
       print("Bem vindo ao jogo de adivinhação !")
       print("*************************************")
 
-      numero_secreto = 32
+      numero_secreto = 22
       chute_str = input("Digite seu numero")
       chute = int(chute_str)
 
       acertou = chute == numero_secreto
       maior =   chute >  numero_secreto
-      <script>
-        var menor = chute < numero_secreto
-      </script>
+      menor = numero_secreto > chute
+   
 
+      tentativa_atual = 0
+      numero_de_tentativas = 3
+
+    while(numero_de_tentativas >= tentativa_atual) 
       if(acertou):
         resposta = "Você acertou"
       else:
@@ -26,7 +29,7 @@
           resposta = "Você errou!, o seu chute foi maior do que o número secreto"
         elif(maior == false):
           resposta = "Você errou!, o seu chute foi maior do que o número secreto" + menor
-
+      tentativa_atual = tentativa_atual + 1
         
 
       print("Você digitou",chute_str, resposta);
